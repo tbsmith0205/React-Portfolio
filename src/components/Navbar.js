@@ -6,16 +6,22 @@ function Navbar({ currentPage, handlePageChange }) {
       <nav class="topnav">
         <ul class="topnavLinks">
           <li>
-            <a href="#about">About Me</a>
+            <a href="#about" onClick={() => handlePageChange("About")}>
+              About Me
+            </a>
           </li>
           <li>
-            <a href="#work">Work</a>
+            <a href="#work" onClick={() => handlePageChange("Projects")}>
+              Projects
+            </a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact" onClick={() => handlePageChange("Contact")}>
+              Contact
+            </a>
           </li>
           <li>
-            <a href="./assets/img/tbs_resume.pdf" target="_blank">
+            <a href="#resume" onClick={() => handlePageChange("Resume")}>
               Résumé
             </a>
           </li>
